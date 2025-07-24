@@ -8,6 +8,7 @@ interface WorkshopCardProps {
   id: string;
   title: string;
   instructor: string;
+  instructorTitle: string;
   instructorImage: string;
   posterImage: string;
   description: string;
@@ -22,6 +23,7 @@ const WorkshopCard = ({
   id,
   title,
   instructor,
+  instructorTitle,
   instructorImage,
   posterImage,
   description,
@@ -59,6 +61,7 @@ const WorkshopCard = ({
           />
           <div>
             <p className="text-sm font-medium text-foreground">{instructor}</p>
+            <p className="text-xs text-muted-foreground">{instructorTitle}</p>
             <p className="text-xs text-muted-foreground">{date}</p>
           </div>
         </div>
