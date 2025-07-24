@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import skillsettLogo from "@/assets/skillsett-logo.png";
+import OfferingsDropdown from "./OfferingsDropdown";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -49,6 +50,26 @@ const Header = () => {
             >
               Home
             </Link>
+            <a
+              href="#mentorship"
+              className="font-medium transition-colors hover:text-accent text-foreground"
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('mentorship')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
+              Mentorship
+            </a>
+            <a
+              href="#courses"
+              className="font-medium transition-colors hover:text-accent text-foreground"
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('courses')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
+              Courses
+            </a>
             <Link
               to="/about"
               className={`font-medium transition-colors hover:text-accent ${
@@ -61,9 +82,7 @@ const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button variant="hero" size="lg">
-              Start Learning. Stay Ahead.
-            </Button>
+            <OfferingsDropdown />
           </div>
 
           {/* Mobile Menu Toggle */}
@@ -92,6 +111,28 @@ const Header = () => {
               >
                 Home
               </Link>
+              <a
+                href="#mentorship"
+                className="font-medium transition-colors hover:text-accent text-foreground"
+                onClick={(e) => {
+                  e.preventDefault();
+                  setIsMobileMenuOpen(false);
+                  document.getElementById('mentorship')?.scrollIntoView({ behavior: 'smooth' });
+                }}
+              >
+                Mentorship
+              </a>
+              <a
+                href="#courses"
+                className="font-medium transition-colors hover:text-accent text-foreground"
+                onClick={(e) => {
+                  e.preventDefault();
+                  setIsMobileMenuOpen(false);
+                  document.getElementById('courses')?.scrollIntoView({ behavior: 'smooth' });
+                }}
+              >
+                Courses
+              </a>
               <Link
                 to="/about"
                 className={`font-medium transition-colors hover:text-accent ${
@@ -101,9 +142,9 @@ const Header = () => {
               >
                 About
               </Link>
-              <Button variant="hero" size="lg" className="w-full">
-                Start Learning. Stay Ahead.
-              </Button>
+              <div className="w-full">
+                <OfferingsDropdown />
+              </div>
             </nav>
           </div>
         )}

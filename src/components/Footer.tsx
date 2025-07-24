@@ -12,7 +12,7 @@ const Footer = () => {
               <div className="w-8 h-8 bg-accent rounded-lg flex items-center justify-center">
                 <span className="text-primary font-bold">S</span>
               </div>
-              <span className="text-xl font-bold">SkillSett.in</span>
+              <span className="text-xl font-bold">skillsett.in</span>
             </div>
             <p className="text-primary-foreground/80 text-sm leading-relaxed">
               Democratizing access to research and upskilling through quality education,
@@ -77,7 +77,7 @@ const Footer = () => {
 
         <div className="border-t border-primary-foreground/20 mt-8 pt-6">
           <div className="text-center text-primary-foreground/60 text-sm">
-            <p>&copy; 2025 SkillSett.in. All rights reserved.</p>
+            <p>&copy; 2025 skillsett.in. All rights reserved.</p>
           </div>
         </div>
       </div>

@@ -13,10 +13,10 @@ const About = () => {
         <section className="py-16 bg-gradient-to-br from-primary/5 to-accent/10">
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6">
-              About SkillSett.in
+              About skillsett.in
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              SkillSett.in is a growing community of learners and mentors from academia and industry. 
+              skillsett.in is a growing community of learners and mentors from academia and industry. 
               We offer high-quality, accessible learning opportunities through workshops, mentoring programs, and online courses.
             </p>
           </div>
@@ -182,7 +182,7 @@ const About = () => {
 
                   <Card className="border-0 shadow-md">
                     <CardContent className="p-6">
-                      <h3 className="font-semibold text-primary mb-4">Why Choose SkillSett.in?</h3>
+                      <h3 className="font-semibold text-primary mb-4">Why Choose skillsett.in?</h3>
                       <ul className="space-y-2 text-muted-foreground">
                         <li className="flex items-center space-x-2">
                           <span className="w-2 h-2 bg-accent rounded-full"></span>
