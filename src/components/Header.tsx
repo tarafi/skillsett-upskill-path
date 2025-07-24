@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import skillsettLogo from "@/assets/skillsett-logo.png";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -30,11 +31,12 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">S</span>
+          <Link to="/" className="flex items-center space-x-3">
+            <img src={skillsettLogo} alt="skillsett.in" className="h-12 w-auto" />
+            <div className="flex flex-col">
+              <span className="text-2xl font-bold text-primary leading-none">skillsett.in</span>
+              <span className="text-xs text-muted-foreground font-medium">set your skills for tomorrow</span>
             </div>
-            <span className="text-xl font-bold text-primary">SkillSett.in</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -54,14 +56,6 @@ const Header = () => {
               }`}
             >
               About
-            </Link>
-            <Link
-              to="/about"
-              className={`font-medium transition-colors hover:text-accent ${
-                isActive("/contact") ? "text-accent" : "text-foreground"
-              }`}
-            >
-              Contact
             </Link>
           </nav>
 
@@ -106,15 +100,6 @@ const Header = () => {
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 About
-              </Link>
-              <Link
-                to="/about"
-                className={`font-medium transition-colors hover:text-accent ${
-                  isActive("/contact") ? "text-accent" : "text-foreground"
-                }`}
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Contact
               </Link>
               <Button variant="hero" size="lg" className="w-full">
                 Start Learning. Stay Ahead.
