@@ -139,8 +139,8 @@ const Home = () => {
       <Header />
       
       {/* Announcement Banner */}
-      <section className="pt-20" style={{ paddingBottom: '288px' }}>
-        <div className="container mx-auto px-4" style={{ paddingTop: '288px' }}>
+      <section className="pt-20 pb-8">
+        <div className="container mx-auto px-4">
           <div 
             className="rounded-xl px-12 py-8 text-center max-w-4xl mx-auto"
             style={{ backgroundColor: '#101820' }}
