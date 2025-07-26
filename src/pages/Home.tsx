@@ -139,7 +139,7 @@ const Home = () => {
       <Header />
       
       {/* Announcement Banner */}
-      <section className="pt-20 pb-8">
+      <section className="pt-40 pb-2">
         <div className="container mx-auto px-4">
           <div 
             className="rounded-xl px-12 py-8 text-center max-w-4xl mx-auto"
