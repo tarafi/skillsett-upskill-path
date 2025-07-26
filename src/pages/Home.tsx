@@ -139,20 +139,22 @@ const Home = () => {
       <Header />
       
       {/* Announcement Banner */}
-      <section className="pt-20 pb-4">
-        <div className="container mx-auto px-4">
+      <section className="pt-20" style={{ paddingBottom: '288px' }}>
+        <div className="container mx-auto px-4" style={{ paddingTop: '288px' }}>
           <div 
-            className="rounded-lg px-8 py-4 text-center"
+            className="rounded-xl px-12 py-8 text-center max-w-4xl mx-auto"
             style={{ backgroundColor: '#101820' }}
           >
-            <p className="font-semibold text-sm" style={{ color: '#00C851' }}>
-              Empowering researchers, students, and faculty with affordable, practical learning. 👉{' '}
+            <p className="font-semibold text-base leading-relaxed" style={{ color: '#00C851' }}>
+              Join a growing learning community empowering scholars, professionals, and educators through practical, research-driven workshops, mentorships, and courses designed to fit your academic and career aspirations.
+              <br /><br />
+              👉{' '}
               <a 
                 href="#contact" 
                 className="underline hover:no-underline transition-all duration-200"
                 style={{ color: '#00C851' }}
               >
-                Contact us
+                Contact us to explore how we can support your journey.
               </a>
             </p>
           </div>
