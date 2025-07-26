@@ -145,18 +145,15 @@ const Home = () => {
             className="rounded-xl px-12 py-8 text-center max-w-4xl mx-auto"
             style={{ backgroundColor: '#101820' }}
           >
-            <p className="font-semibold text-base leading-relaxed" style={{ color: '#00C851' }}>
+            <p className="font-semibold text-base leading-relaxed mb-6" style={{ color: '#00C851' }}>
               Join a growing learning community empowering scholars, professionals, and educators through practical, research-driven workshops, mentorships, and courses designed to fit your academic and career aspirations.
-              <br /><br />
-              👉{' '}
-              <a 
-                href="#contact" 
-                className="underline hover:no-underline transition-all duration-200"
-                style={{ color: '#00C851' }}
-              >
-                Contact us to explore how we can support your journey.
-              </a>
             </p>
+            <button 
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+              className="bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200"
+            >
+              👉 Contact us to explore how we can support your journey
+            </button>
           </div>
         </div>
       </section>
