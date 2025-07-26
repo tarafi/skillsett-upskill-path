@@ -1,3 +1,4 @@
+import { Mail, Phone } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WorkshopCard from "@/components/WorkshopCard";
@@ -150,9 +151,11 @@ const Home = () => {
             </p>
             <button 
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-              className="bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200"
+              className="bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2 mx-auto"
             >
-              👉 Contact us to explore how we can support your journey
+              <Mail size={18} />
+              <Phone size={18} />
+              Contact us
             </button>
           </div>
         </div>
