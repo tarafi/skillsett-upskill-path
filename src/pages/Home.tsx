@@ -138,8 +138,29 @@ const Home = () => {
     <div className="min-h-screen bg-background">
       <Header />
       
+      {/* Announcement Banner */}
+      <section className="pt-20 pb-4">
+        <div className="container mx-auto px-4">
+          <div 
+            className="rounded-lg px-8 py-4 text-center"
+            style={{ backgroundColor: '#101820' }}
+          >
+            <p className="font-semibold text-sm" style={{ color: '#00C851' }}>
+              Empowering researchers, students, and faculty with affordable, practical learning. 👉{' '}
+              <a 
+                href="#contact" 
+                className="underline hover:no-underline transition-all duration-200"
+                style={{ color: '#00C851' }}
+              >
+                Contact us
+              </a>
+            </p>
+          </div>
+        </div>
+      </section>
+      
       {/* Main Content */}
-      <main className="pt-20">
+      <main>
         {/* Workshops Section */}
         <section className="py-16 bg-background">
           <div className="container mx-auto px-4">
