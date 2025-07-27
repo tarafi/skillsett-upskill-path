@@ -139,99 +139,90 @@ const Home = () => {
     <div className="min-h-screen bg-background">
       <Header />
       
-      {/* Main Content Container with 0.75cm margins */}
-      <div className="mx-auto" style={{ paddingLeft: '28px', paddingRight: '28px' }}>
-        {/* Announcement Banner */}
-        <section className="pt-40 pb-2">
-          <div className="mx-auto px-4">
-            <div 
-              className="rounded-xl px-12 py-8 text-center max-w-4xl mx-auto"
-              style={{ backgroundColor: '#101820' }}
+      {/* Announcement Banner */}
+      <section className="pt-40 pb-2">
+        <div className="container mx-auto px-4">
+          <div 
+            className="rounded-xl px-12 py-8 text-center max-w-4xl mx-auto"
+            style={{ backgroundColor: '#101820' }}
+          >
+            <p className="font-semibold text-base leading-relaxed mb-6" style={{ color: '#00C851' }}>
+              Join a growing learning community empowering scholars, professionals, and educators through practical, research-driven workshops, mentorships, and courses designed to fit your academic and career aspirations.
+            </p>
+            <button 
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+              className="bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2 mx-auto"
             >
-              <p className="font-semibold text-sm leading-relaxed mb-6" style={{ color: '#00C851' }}>
-                Join a growing learning community empowering scholars, professionals, and educators through practical, research-driven workshops, mentorships, and courses designed to fit your academic and career aspirations.
+              <Mail size={18} />
+              <Phone size={18} />
+              Contact us
+            </button>
+          </div>
+        </div>
+      </section>
+      
+      {/* Main Content */}
+      <main>
+        {/* Workshops Section */}
+        <section className="py-16 bg-background">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+                Live Workshops
+              </h2>
+              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                Interactive learning sessions with industry experts and academics
               </p>
-              <button 
-                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-                className="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2 mx-auto text-sm"
-              >
-                <Mail size={16} />
-                <Phone size={16} />
-                Contact us
-              </button>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {workshops.map((workshop) => (
+                <WorkshopCard key={workshop.id} {...workshop} />
+              ))}
             </div>
           </div>
         </section>
-        
-        {/* Main Content */}
-        <main>
-          {/* Workshops Section */}
-          <section className="py-16 bg-background">
-            <div className="mx-auto px-4">
-              <div className="text-center mb-12">
-                <h2 className="text-lg font-bold mb-4" style={{ color: '#00C851' }}>
-                  Live Workshops
-                </h2>
-                <p className="text-sm" style={{ color: '#101820' }}>
-                  Interactive learning sessions with industry experts and academics
-                </p>
-              </div>
-              
-              <div className="flex flex-col gap-6 max-w-4xl mx-auto">
-                {workshops.map((workshop) => (
-                  <div key={workshop.id} className="w-7/10 mx-auto" style={{ width: '70%' }}>
-                    <WorkshopCard {...workshop} />
-                  </div>
-                ))}
-              </div>
-            </div>
-          </section>
 
-          {/* Mentorship Section */}
-          <section id="mentorship" className="py-16" style={{ backgroundColor: '#f8f9fa' }}>
-            <div className="mx-auto px-4">
-              <div className="text-center mb-12">
-                <h2 className="text-lg font-bold mb-4" style={{ color: '#00C851' }}>
-                  Mentorship That Makes a Difference
-                </h2>
-                <p className="text-sm" style={{ color: '#101820' }}>
-                  Personalized guidance from experienced academics and industry professionals
-                </p>
-              </div>
-              
-              <div className="flex flex-col gap-6 max-w-4xl mx-auto">
-                {mentorshipPrograms.map((program) => (
-                  <div key={program.id} className="mx-auto" style={{ width: '70%' }}>
-                    <MentorshipCard {...program} />
-                  </div>
-                ))}
-              </div>
+        {/* Mentorship Section */}
+        <section id="mentorship" className="py-16 bg-secondary">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+                Mentorship That Makes a Difference
+              </h2>
+              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                Personalized guidance from experienced academics and industry professionals
+              </p>
             </div>
-          </section>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {mentorshipPrograms.map((program) => (
+                <MentorshipCard key={program.id} {...program} />
+              ))}
+            </div>
+          </div>
+        </section>
 
-          {/* Online Courses Section */}
-          <section id="courses" className="py-16 bg-background">
-            <div className="mx-auto px-4">
-              <div className="text-center mb-12">
-                <h2 className="text-lg font-bold mb-4" style={{ color: '#00C851' }}>
-                  On-Demand Courses (Start Anytime)
-                </h2>
-                <p className="text-sm" style={{ color: '#101820' }}>
-                  Self-paced learning with lifetime access to course materials
-                </p>
-              </div>
-              
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-                {onlineCourses.map((course) => (
-                  <div key={course.id} className="mx-auto" style={{ width: '70%' }}>
-                    <CourseCard {...course} />
-                  </div>
-                ))}
-              </div>
+        {/* Online Courses Section */}
+        <section id="courses" className="py-16 bg-background">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+                On-Demand Courses (Start Anytime)
+              </h2>
+              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                Self-paced learning with lifetime access to course materials
+              </p>
             </div>
-          </section>
-        </main>
-      </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {onlineCourses.map((course) => (
+                <CourseCard key={course.id} {...course} />
+              ))}
+            </div>
+          </div>
+        </section>
+      </main>
 
       <Footer />
     </div>
