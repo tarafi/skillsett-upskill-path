@@ -139,8 +139,8 @@ const Home = () => {
     <div className="min-h-screen bg-background">
       <Header />
       
-      {/* Main Content Container with 2.5-inch margins */}
-      <div className="mx-auto" style={{ maxWidth: 'calc(100% - 360px)', paddingLeft: '180px', paddingRight: '180px' }}>
+      {/* Main Content Container with 0.75cm margins */}
+      <div className="mx-auto" style={{ paddingLeft: '28px', paddingRight: '28px' }}>
         {/* Announcement Banner */}
         <section className="pt-40 pb-2">
           <div className="mx-auto px-4">
@@ -179,7 +179,7 @@ const Home = () => {
               
               <div className="flex flex-col gap-6 max-w-4xl mx-auto">
                 {workshops.map((workshop) => (
-                  <div key={workshop.id} className="w-4/5 mx-auto">
+                  <div key={workshop.id} className="w-7/10 mx-auto" style={{ width: '70%' }}>
                     <WorkshopCard {...workshop} />
                   </div>
                 ))}
@@ -201,7 +201,7 @@ const Home = () => {
               
               <div className="flex flex-col gap-6 max-w-4xl mx-auto">
                 {mentorshipPrograms.map((program) => (
-                  <div key={program.id} className="w-4/5 mx-auto">
+                  <div key={program.id} className="mx-auto" style={{ width: '70%' }}>
                     <MentorshipCard {...program} />
                   </div>
                 ))}
@@ -223,7 +223,7 @@ const Home = () => {
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
                 {onlineCourses.map((course) => (
-                  <div key={course.id} className="w-4/5 mx-auto">
+                  <div key={course.id} className="mx-auto" style={{ width: '70%' }}>
                     <CourseCard {...course} />
                   </div>
                 ))}
