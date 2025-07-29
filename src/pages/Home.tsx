@@ -31,7 +31,7 @@ const Home = () => {
       instructorImage: instructor1,
       posterImage: semWorkshop,
       description: "Master the fundamentals and advanced concepts of SEM, including CFA and path analysis using AMOS and LISREL software.",
-      keywords: ["SEM", "CFA", "AMOS", "LISREL"],
+      keywords: ["SEM", "CFA", "AMOS", "SPSS"],
       date: "9th Aug",
       fee: "₹299",
       mode: "Online",

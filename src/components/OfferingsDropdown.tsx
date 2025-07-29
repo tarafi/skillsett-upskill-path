@@ -7,7 +7,7 @@ const OfferingsDropdown = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const workshops = [
-    { id: "sem-basics-advanced", title: "Structural Equation Modelling – Basics to Advanced" },
+    { id: "sem-basics-advanced", title: "Structural Equation Modelling – Basics to Advanced", externalLink: "https://pages.razorpay.com/skillsettsem1" },
     { id: "stata-data-analysis", title: "Mastering Large-scale Data Analysis using Stata" },
     { id: "factor-analysis-spss", title: "Factor Analysis using SPSS" },
     { id: "python-zero-coding", title: "Python for Data Analysis – Zero Coding" },
@@ -45,14 +45,27 @@ const OfferingsDropdown = () => {
               <h3 className="font-semibold text-primary mb-3">Live Workshops</h3>
               <div className="space-y-2">
                 {workshops.map((workshop) => (
-                  <Link
-                    key={workshop.id}
-                    to={`/workshop/${workshop.id}`}
-                    className="block text-sm text-foreground hover:text-accent transition-colors"
-                    onClick={() => setIsOpen(false)}
-                  >
-                    {workshop.title}
-                  </Link>
+                  workshop.externalLink ? (
+                    <a
+                      key={workshop.id}
+                      href={workshop.externalLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block text-sm text-foreground hover:text-accent transition-colors"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      {workshop.title}
+                    </a>
+                  ) : (
+                    <Link
+                      key={workshop.id}
+                      to={`/workshop/${workshop.id}`}
+                      className="block text-sm text-foreground hover:text-accent transition-colors"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      {workshop.title}
+                    </Link>
+                  )
                 ))}
               </div>
             </div>
