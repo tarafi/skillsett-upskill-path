@@ -36,7 +36,7 @@ const Home = () => {
       fee: "₹299",
       mode: "Online",
       day: "Saturday",
-      externalLink: "https://example.com/sem-registration", // Replace with your actual third-party link
+      externalLink: "https://pages.razorpay.com/skillsettsem1",
     },
     {
       id: "stata-data-analysis",
