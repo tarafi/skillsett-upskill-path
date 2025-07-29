@@ -32,13 +32,6 @@ interface LandingPageData {
 }
 
 const landingData: Record<string, LandingPageData> = {
-  "sem-basics-advanced": {
-    title: "Structural Equation Modelling – Basics to Advanced",
-    description: "Master the fundamentals and advanced concepts of SEM, including CFA and path analysis using AMOS and LISREL software. This comprehensive workshop will take you from basics to advanced techniques in structural equation modeling.",
-    posterImage: semWorkshop,
-    fee: "₹299",
-    type: "workshop",
-  },
   "stata-data-analysis": {
     title: "Mastering Large-scale Data Analysis using Stata",
     description: "Learn comprehensive data analysis techniques using Stata for large datasets, including regression analysis and data cleaning. Perfect for researchers working with complex survey data.",

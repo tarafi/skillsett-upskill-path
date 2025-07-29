@@ -17,6 +17,7 @@ interface WorkshopCardProps {
   fee: string;
   mode: string;
   day: string;
+  externalLink?: string;
 }
 
 const WorkshopCard = ({
@@ -32,6 +33,7 @@ const WorkshopCard = ({
   fee,
   mode,
   day,
+  externalLink,
 }: WorkshopCardProps) => {
   return (
     <Card className="group overflow-hidden border-0 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
@@ -95,11 +97,19 @@ const WorkshopCard = ({
       </CardContent>
 
       <CardFooter className="pt-4 gap-2">
-        <Link to={`/workshop/${id}`} className="flex-1">
-          <Button variant="accent" className="w-full">
-            Apply Now
-          </Button>
-        </Link>
+        {externalLink ? (
+          <a href={externalLink} target="_blank" rel="noopener noreferrer" className="flex-1">
+            <Button variant="accent" className="w-full">
+              Apply Now
+            </Button>
+          </a>
+        ) : (
+          <Link to={`/workshop/${id}`} className="flex-1">
+            <Button variant="accent" className="w-full">
+              Apply Now
+            </Button>
+          </Link>
+        )}
         <Button variant="outline" size="sm">
           <Download className="w-4 h-4" />
         </Button>
