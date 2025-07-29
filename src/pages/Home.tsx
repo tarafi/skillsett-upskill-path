@@ -142,7 +142,7 @@ const Home = () => {
       
       {/* Announcement Banner */}
       <section className="pt-40 pb-2">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-8 lg:px-16 xl:px-24">
           <div 
             className="rounded-xl px-12 py-8 text-center max-w-4xl mx-auto"
             style={{ backgroundColor: '#101820' }}
@@ -166,7 +166,7 @@ const Home = () => {
       <main>
         {/* Workshops Section */}
         <section className="py-16 bg-background">
-          <div className="container mx-auto px-4">
+          <div className="container mx-auto px-8 lg:px-16 xl:px-24">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
                 Live Workshops
@@ -176,7 +176,7 @@ const Home = () => {
               </p>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[30px]">
               {workshops.map((workshop) => (
                 <WorkshopCard key={workshop.id} {...workshop} />
               ))}
@@ -186,7 +186,7 @@ const Home = () => {
 
         {/* Mentorship Section */}
         <section id="mentorship" className="py-16 bg-secondary">
-          <div className="container mx-auto px-4">
+          <div className="container mx-auto px-8 lg:px-16 xl:px-24">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
                 Mentorship That Makes a Difference
@@ -196,7 +196,7 @@ const Home = () => {
               </p>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {mentorshipPrograms.map((program) => (
                 <MentorshipCard key={program.id} {...program} />
               ))}
@@ -206,7 +206,7 @@ const Home = () => {
 
         {/* Online Courses Section */}
         <section id="courses" className="py-16 bg-background">
-          <div className="container mx-auto px-4">
+          <div className="container mx-auto px-8 lg:px-16 xl:px-24">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
                 On-Demand Courses (Start Anytime)
@@ -216,7 +216,7 @@ const Home = () => {
               </p>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {onlineCourses.map((course) => (
                 <CourseCard key={course.id} {...course} />
               ))}
