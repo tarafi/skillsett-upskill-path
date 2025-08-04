@@ -1,4 +1,4 @@
-import { MessageCircle } from "lucide-react";
+import { Users } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WorkshopCard from "@/components/WorkshopCard";
@@ -143,18 +143,27 @@ const Home = () => {
       {/* Announcement Banner */}
       <section className="pt-40 pb-2">
         <div className="container mx-auto px-8 lg:px-16 xl:px-24">
-          <div className="bg-secondary/50 rounded-xl px-12 py-8 text-center max-w-4xl mx-auto border border-border/50">
-            <p className="font-semibold text-base leading-relaxed mb-6 text-foreground">
+          <div 
+            className="rounded-xl px-12 py-8 text-center max-w-4xl mx-auto relative overflow-hidden"
+            style={{
+              background: `
+                linear-gradient(135deg, rgba(16, 70, 32, 0.8), rgba(22, 101, 52, 0.9)),
+                radial-gradient(circle at 20px 20px, rgba(34, 197, 94, 0.1) 1px, transparent 1px)
+              `,
+              backgroundSize: '40px 40px, 40px 40px'
+            }}
+          >
+            <p className="font-semibold text-base leading-relaxed mb-6 text-white relative z-10">
               Join a growing learning community empowering scholars, professionals, and educators through practical, research-driven workshops, mentorships, and courses designed to fit your academic and career aspirations.
             </p>
             <a 
               href="https://chat.whatsapp.com/BwszMadMGomB5DpkwLllvB?mode=ac_t"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 inline-flex items-center gap-2"
+              className="bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 inline-flex items-center gap-2 relative z-10"
             >
-              <MessageCircle size={18} />
-              Join Now:
+              <Users size={18} />
+              Join Now
             </a>
           </div>
         </div>
