@@ -1,4 +1,4 @@
-import { Mail, Phone } from "lucide-react";
+import { MessageCircle } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WorkshopCard from "@/components/WorkshopCard";
@@ -143,21 +143,19 @@ const Home = () => {
       {/* Announcement Banner */}
       <section className="pt-40 pb-2">
         <div className="container mx-auto px-8 lg:px-16 xl:px-24">
-          <div 
-            className="rounded-xl px-12 py-8 text-center max-w-4xl mx-auto"
-            style={{ backgroundColor: '#101820' }}
-          >
-            <p className="font-semibold text-base leading-relaxed mb-6" style={{ color: '#00C851' }}>
+          <div className="bg-secondary/50 rounded-xl px-12 py-8 text-center max-w-4xl mx-auto border border-border/50">
+            <p className="font-semibold text-base leading-relaxed mb-6 text-foreground">
               Join a growing learning community empowering scholars, professionals, and educators through practical, research-driven workshops, mentorships, and courses designed to fit your academic and career aspirations.
             </p>
-            <button 
-              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-              className="bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2 mx-auto"
+            <a 
+              href="https://chat.whatsapp.com/BwszMadMGomB5DpkwLllvB?mode=ac_t"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 inline-flex items-center gap-2"
             >
-              <Mail size={18} />
-              <Phone size={18} />
-              Contact us
-            </button>
+              <MessageCircle size={18} />
+              Join Now:
+            </a>
           </div>
         </div>
       </section>
