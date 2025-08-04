@@ -144,7 +144,7 @@ const Home = () => {
       <section className="pt-40 pb-2">
         <div className="container mx-auto px-8 lg:px-16 xl:px-24">
           <div 
-            className="rounded-xl px-12 py-8 text-center max-w-4xl mx-auto relative overflow-hidden"
+            className="rounded-xl px-12 py-8 text-right max-w-4xl mx-auto relative overflow-hidden"
             style={{
               background: `
                 linear-gradient(135deg, rgba(12, 50, 24, 0.9), rgba(16, 75, 40, 0.95)),
@@ -153,9 +153,18 @@ const Home = () => {
               backgroundSize: '40px 40px, 40px 40px'
             }}
           >
-            <p className="font-semibold text-base leading-relaxed mb-6 text-white relative z-10">
-              Join a growing learning community committed to empowering students, scholars, professionals, and educators through hands-on, research-driven learning experiences.
-            </p>
+            <div className="mb-6 relative z-10">
+              <p className="font-semibold text-base leading-relaxed mb-4 text-white">
+                Join a growing learning community committed to empowering students, scholars, professionals, and educators through hands-on, research-driven learning experiences.
+              </p>
+              <div className="relative h-8 overflow-hidden bg-green-800/30 rounded-lg border border-green-500/20">
+                <div className="absolute inset-0 flex items-center">
+                  <div className="animate-scroll whitespace-nowrap text-green-200 font-medium px-4">
+                    Research • Mentorship • Data Analytics • STATA • SPSS • NVIVO • Python • Research • Mentorship • Data Analytics • STATA • SPSS • NVIVO • Python
+                  </div>
+                </div>
+              </div>
+            </div>
             <a 
               href="https://chat.whatsapp.com/BwszMadMGomB5DpkwLllvB?mode=ac_t"
               target="_blank"
