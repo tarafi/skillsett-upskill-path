@@ -164,15 +164,15 @@ const Home = () => {
               </a>
             </div>
             <div className="ml-8 relative z-10">
-              <div className="w-32 h-12 bg-green-800/30 rounded-lg border border-green-500/20 overflow-hidden flex items-center justify-center">
-                <div className="animate-vertical-scroll text-green-200 font-medium text-sm">
-                  <div className="py-3">Research</div>
-                  <div className="py-3">Mentorship</div>
-                  <div className="py-3">Data Analytics</div>
-                  <div className="py-3">STATA</div>
-                  <div className="py-3">SPSS</div>
-                  <div className="py-3">NVIVO</div>
-                  <div className="py-3">Python</div>
+              <div className="w-32 h-12 bg-green-800/30 rounded-lg border border-green-500/20 overflow-hidden flex items-center justify-end pr-3">
+                <div className="animate-vertical-scroll text-white font-bold text-sm text-right">
+                  <div className="h-12 flex items-center justify-end">Research</div>
+                  <div className="h-12 flex items-center justify-end">Mentorship</div>
+                  <div className="h-12 flex items-center justify-end">Data Analytics</div>
+                  <div className="h-12 flex items-center justify-end">STATA</div>
+                  <div className="h-12 flex items-center justify-end">SPSS</div>
+                  <div className="h-12 flex items-center justify-end">NVIVO</div>
+                  <div className="h-12 flex items-center justify-end">Python</div>
                 </div>
               </div>
             </div>
