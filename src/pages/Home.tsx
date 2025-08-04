@@ -147,14 +147,14 @@ const Home = () => {
             className="rounded-xl px-12 py-8 text-center max-w-4xl mx-auto relative overflow-hidden"
             style={{
               background: `
-                linear-gradient(135deg, rgba(16, 70, 32, 0.8), rgba(22, 101, 52, 0.9)),
+                linear-gradient(135deg, rgba(12, 50, 24, 0.9), rgba(16, 75, 40, 0.95)),
                 radial-gradient(circle at 20px 20px, rgba(34, 197, 94, 0.1) 1px, transparent 1px)
               `,
               backgroundSize: '40px 40px, 40px 40px'
             }}
           >
             <p className="font-semibold text-base leading-relaxed mb-6 text-white relative z-10">
-              Join a growing learning community empowering scholars, professionals, and educators through practical, research-driven workshops, mentorships, and courses designed to fit your academic and career aspirations.
+              Join a growing learning community committed to empowering students, scholars, professionals, and educators through hands-on, research-driven learning experiences.
             </p>
             <a 
               href="https://chat.whatsapp.com/BwszMadMGomB5DpkwLllvB?mode=ac_t"
