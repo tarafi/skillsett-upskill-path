@@ -144,36 +144,38 @@ const Home = () => {
       <section className="pt-40 pb-2">
         <div className="container mx-auto px-8 lg:px-16 xl:px-24">
           <div 
-            className="rounded-xl px-12 py-8 text-right max-w-4xl mx-auto relative overflow-hidden"
+            className="rounded-xl px-12 py-8 max-w-4xl mx-auto relative overflow-hidden flex items-center justify-between"
             style={{
-              background: `
-                linear-gradient(135deg, rgba(12, 50, 24, 0.9), rgba(16, 75, 40, 0.95)),
-                radial-gradient(circle at 20px 20px, rgba(34, 197, 94, 0.1) 1px, transparent 1px)
-              `,
-              backgroundSize: '40px 40px, 40px 40px'
+              backgroundColor: '#0A322D'
             }}
           >
-            <div className="mb-6 relative z-10">
-              <p className="font-semibold text-base leading-relaxed mb-4 text-white">
+            <div className="flex-1 text-left relative z-10">
+              <p className="font-semibold text-base leading-relaxed mb-6 text-white">
                 Join a growing learning community committed to empowering students, scholars, professionals, and educators through hands-on, research-driven learning experiences.
               </p>
-              <div className="relative h-8 overflow-hidden bg-green-800/30 rounded-lg border border-green-500/20">
-                <div className="absolute inset-0 flex items-center">
-                  <div className="animate-scroll whitespace-nowrap text-green-200 font-medium px-4">
-                    Research • Mentorship • Data Analytics • STATA • SPSS • NVIVO • Python • Research • Mentorship • Data Analytics • STATA • SPSS • NVIVO • Python
-                  </div>
+              <a 
+                href="https://chat.whatsapp.com/BwszMadMGomB5DpkwLllvB?mode=ac_t"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 inline-flex items-center gap-2"
+              >
+                <Users size={18} />
+                Join Now
+              </a>
+            </div>
+            <div className="ml-8 relative z-10">
+              <div className="w-32 h-12 bg-green-800/30 rounded-lg border border-green-500/20 overflow-hidden flex items-center justify-center">
+                <div className="animate-vertical-scroll text-green-200 font-medium text-sm">
+                  <div className="py-3">Research</div>
+                  <div className="py-3">Mentorship</div>
+                  <div className="py-3">Data Analytics</div>
+                  <div className="py-3">STATA</div>
+                  <div className="py-3">SPSS</div>
+                  <div className="py-3">NVIVO</div>
+                  <div className="py-3">Python</div>
                 </div>
               </div>
             </div>
-            <a 
-              href="https://chat.whatsapp.com/BwszMadMGomB5DpkwLllvB?mode=ac_t"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 inline-flex items-center gap-2 relative z-10"
-            >
-              <Users size={18} />
-              Join Now
-            </a>
           </div>
         </div>
       </section>

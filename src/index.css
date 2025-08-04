@@ -80,8 +80,36 @@ All colors MUST be HSL.
       }
     }
 
+    @keyframes vertical-scroll {
+      0%, 14.28% {
+        transform: translateY(0);
+      }
+      14.29%, 28.57% {
+        transform: translateY(-100%);
+      }
+      28.58%, 42.86% {
+        transform: translateY(-200%);
+      }
+      42.87%, 57.14% {
+        transform: translateY(-300%);
+      }
+      57.15%, 71.43% {
+        transform: translateY(-400%);
+      }
+      71.44%, 85.71% {
+        transform: translateY(-500%);
+      }
+      85.72%, 100% {
+        transform: translateY(-600%);
+      }
+    }
+
     .animate-scroll {
       animation: scroll 15s linear infinite;
+    }
+
+    .animate-vertical-scroll {
+      animation: vertical-scroll 7s infinite;
     }
 
   .dark {
