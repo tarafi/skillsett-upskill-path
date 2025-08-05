@@ -167,16 +167,16 @@ const Home = () => {
             </div>
 
             {/* Featured Program Card - Right Side */}
-            <div className="lg:w-96">
-              <div className="bg-card border rounded-lg overflow-hidden shadow-lg">
-                <div className="h-64 overflow-hidden">
+            <div className="lg:w-96 flex">
+              <div className="bg-card border rounded-lg overflow-hidden shadow-lg flex flex-col h-full">
+                <div className="flex-1 overflow-hidden">
                   <img 
                     src={semWorkshop} 
                     alt="Structural Equation Modelling Workshop"
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="p-6">
+                <div className="p-6 flex-shrink-0">
                   <div className="bg-accent text-accent-foreground px-3 py-1 rounded-full text-sm font-medium mb-3 inline-block">
                     Featured Program
                   </div>
