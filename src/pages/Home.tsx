@@ -1,4 +1,4 @@
-import { Users } from "lucide-react";
+import { Users, MessageCircle } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WorkshopCard from "@/components/WorkshopCard";
@@ -140,18 +140,20 @@ const Home = () => {
     <div className="min-h-screen bg-background">
       <Header />
       
-      {/* Announcement Banner */}
-      <section className="pt-40 pb-2">
+      {/* Hero Section */}
+      <section className="pt-40 pb-8">
         <div className="container mx-auto px-8 lg:px-16 xl:px-24">
-          <div 
-            className="rounded-xl px-12 py-8 max-w-4xl mx-auto relative overflow-hidden flex items-center justify-between"
-            style={{
-              backgroundColor: '#0A322D'
-            }}
-          >
-            <div className="flex-1 text-left relative z-10">
-              <p className="font-semibold text-base leading-relaxed mb-6 text-white">
-                Join a growing learning community committed to empowering students, scholars, professionals, and educators through hands-on, research-driven learning experiences.
+          <div className="flex flex-col lg:flex-row gap-12 items-start">
+            {/* Hero Text - Left Side */}
+            <div className="flex-1">
+              <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6">
+                Learn, Apply, and Lead in the AI Age
+              </h1>
+              <p className="text-lg text-muted-foreground mb-4 leading-relaxed">
+                At skillsett, we bring students, educators, and professionals together to master research, analytics, and technology through immersive, outcome-driven learning experiences.
+              </p>
+              <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+                Join our growing community and start your journey toward future-ready skills today.
               </p>
               <a 
                 href="https://chat.whatsapp.com/BwszMadMGomB5DpkwLllvB?mode=ac_t"
@@ -159,20 +161,42 @@ const Home = () => {
                 rel="noopener noreferrer"
                 className="bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 inline-flex items-center gap-2"
               >
-                <Users size={18} />
+                <MessageCircle size={18} />
                 Join Now
               </a>
             </div>
-            <div className="ml-8 relative z-10">
-              <div className="w-32 h-12 bg-green-800/30 rounded-lg border border-green-500/20 overflow-hidden flex items-center justify-end pr-3">
-                <div className="animate-vertical-scroll text-white font-bold text-sm text-right">
-                  <div className="h-12 flex items-center justify-end">Research</div>
-                  <div className="h-12 flex items-center justify-end">Mentorship</div>
-                  <div className="h-12 flex items-center justify-end">Data Analytics</div>
-                  <div className="h-12 flex items-center justify-end">STATA</div>
-                  <div className="h-12 flex items-center justify-end">SPSS</div>
-                  <div className="h-12 flex items-center justify-end">NVIVO</div>
-                  <div className="h-12 flex items-center justify-end">Python</div>
+
+            {/* Featured Program Card - Right Side */}
+            <div className="lg:w-96">
+              <div className="bg-card border rounded-lg overflow-hidden shadow-lg">
+                <div className="h-48 overflow-hidden">
+                  <img 
+                    src={semWorkshop} 
+                    alt="Structural Equation Modelling Workshop"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-6">
+                  <div className="bg-accent text-accent-foreground px-3 py-1 rounded-full text-sm font-medium mb-3 inline-block">
+                    Featured Program
+                  </div>
+                  <h3 className="text-xl font-bold text-primary mb-3">
+                    Structural Equation Modelling – Basics to Advanced
+                  </h3>
+                  <p className="text-muted-foreground text-sm mb-4">
+                    Master SEM, CFA and path analysis using AMOS and LISREL
+                  </p>
+                  <div className="flex items-center justify-between">
+                    <span className="text-primary font-bold text-lg">₹299</span>
+                    <a 
+                      href="https://pages.razorpay.com/skillsettsem1"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-primary text-primary-foreground px-4 py-2 rounded-lg hover:bg-primary/90 transition-colors"
+                    >
+                      Apply Now
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
