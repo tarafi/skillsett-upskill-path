@@ -171,32 +171,20 @@ const Home = () => {
               <div className="bg-card border rounded-lg overflow-hidden shadow-lg flex flex-col h-full">
                 <div className="flex-1 overflow-hidden">
                   <img 
-                    src={semWorkshop} 
+                    src="/lovable-uploads/318e574e-6d7b-44fc-93dc-8cdcdddd188a.png" 
                     alt="Structural Equation Modelling Workshop"
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="p-6 flex-shrink-0">
-                  <div className="bg-accent text-accent-foreground px-3 py-1 rounded-full text-sm font-medium mb-3 inline-block">
-                    Featured Program
-                  </div>
-                  <h3 className="text-xl font-bold text-primary mb-3">
-                    Structural Equation Modelling – Basics to Advanced
-                  </h3>
-                  <p className="text-muted-foreground text-sm mb-4">
-                    Master SEM, CFA and path analysis using AMOS and LISREL
-                  </p>
-                  <div className="flex items-center justify-between">
-                    <span className="text-primary font-bold text-lg">₹299</span>
-                    <a 
-                      href="https://pages.razorpay.com/skillsettsem1"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="bg-primary text-primary-foreground px-4 py-2 rounded-lg hover:bg-primary/90 transition-colors"
-                    >
-                      Apply Now
-                    </a>
-                  </div>
+                <div className="p-4 flex-shrink-0">
+                  <a 
+                    href="https://pages.razorpay.com/skillsettsem1"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-primary text-primary-foreground px-6 py-3 rounded-lg hover:bg-primary/90 transition-colors w-full block text-center font-semibold"
+                  >
+                    Apply Now
+                  </a>
                 </div>
               </div>
             </div>
