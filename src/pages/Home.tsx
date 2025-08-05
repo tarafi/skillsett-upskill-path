@@ -146,13 +146,16 @@ const Home = () => {
           <div className="flex flex-col lg:flex-row gap-12 items-start">
             {/* Hero Text - Left Side */}
             <div className="flex-1">
-              <h1 className="text-3xl md:text-4xl font-bold text-green-600 mb-6">
+              <h1 className="text-2xl md:text-4xl font-bold text-green-600 mb-4 md:mb-6">
                 Learn, Apply, and Lead in the AI Age
               </h1>
-              <p className="text-base text-muted-foreground mb-4 leading-relaxed">
-                At skillsett, we bring students, educators, and professionals together to master research, analytics, and technology through immersive, outcome-driven learning experiences.
+              <p className="text-sm md:text-base text-muted-foreground mb-3 md:mb-4 leading-relaxed">
+                At SkillSett, we bring students, educators, and professionals together to master research, analytics, and technology through immersive, outcome-driven learning experiences.
               </p>
-              <p className="text-base text-muted-foreground mb-8 leading-relaxed">
+              <p className="text-sm md:text-base text-muted-foreground mb-3 md:mb-4 leading-relaxed">
+                We also offer dedicated mentorship programs for PhD aspirants and early-career scholars in management, economics, and commerce—guiding you through research design, publishing, and academic career growth with personalized support from experienced mentors.
+              </p>
+              <p className="text-sm md:text-base text-muted-foreground mb-6 md:mb-8 leading-relaxed">
                 Join our growing community and start your journey toward future-ready skills today.
               </p>
               <a 
