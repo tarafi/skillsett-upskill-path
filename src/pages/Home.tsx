@@ -146,13 +146,13 @@ const Home = () => {
           <div className="flex flex-col lg:flex-row gap-12 items-start">
             {/* Hero Text - Left Side */}
             <div className="flex-1">
-              <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6">
+              <h1 className="text-3xl md:text-4xl font-bold text-green-600 mb-6">
                 Learn, Apply, and Lead in the AI Age
               </h1>
-              <p className="text-lg text-muted-foreground mb-4 leading-relaxed">
+              <p className="text-base text-muted-foreground mb-4 leading-relaxed">
                 At skillsett, we bring students, educators, and professionals together to master research, analytics, and technology through immersive, outcome-driven learning experiences.
               </p>
-              <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+              <p className="text-base text-muted-foreground mb-8 leading-relaxed">
                 Join our growing community and start your journey toward future-ready skills today.
               </p>
               <a 
@@ -169,7 +169,7 @@ const Home = () => {
             {/* Featured Program Card - Right Side */}
             <div className="lg:w-96">
               <div className="bg-card border rounded-lg overflow-hidden shadow-lg">
-                <div className="h-48 overflow-hidden">
+                <div className="h-64 overflow-hidden">
                   <img 
                     src={semWorkshop} 
                     alt="Structural Equation Modelling Workshop"
