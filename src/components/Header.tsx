@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import skillsettLogo from "@/assets/skillsett-logo.png";
@@ -9,6 +9,7 @@ const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,6 +21,25 @@ const Header = () => {
   }, []);
 
   const isActive = (path: string) => location.pathname === path;
+
+  const handleNavigateToSection = (sectionId: string) => {
+    if (location.pathname !== '/') {
+      navigate('/');
+      setTimeout(() => {
+        document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
+      }, 100);
+    } else {
+      document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const handleHomeClick = () => {
+    if (location.pathname === '/') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      navigate('/');
+    }
+  };
 
   return (
     <header
@@ -42,34 +62,26 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <Link
-              to="/"
+            <button
+              onClick={handleHomeClick}
               className={`font-medium transition-colors hover:text-accent ${
                 isActive("/") ? "text-accent" : "text-foreground"
               }`}
             >
               Home
-            </Link>
-            <a
-              href="#mentorship"
+            </button>
+            <button
+              onClick={() => handleNavigateToSection('mentorship')}
               className="font-medium transition-colors hover:text-accent text-foreground"
-              onClick={(e) => {
-                e.preventDefault();
-                document.getElementById('mentorship')?.scrollIntoView({ behavior: 'smooth' });
-              }}
             >
               Mentorship
-            </a>
-            <a
-              href="#courses"
+            </button>
+            <button
+              onClick={() => handleNavigateToSection('courses')}
               className="font-medium transition-colors hover:text-accent text-foreground"
-              onClick={(e) => {
-                e.preventDefault();
-                document.getElementById('courses')?.scrollIntoView({ behavior: 'smooth' });
-              }}
             >
               Courses
-            </a>
+            </button>
             <Link
               to="/about"
               className={`font-medium transition-colors hover:text-accent ${
@@ -102,37 +114,35 @@ const Header = () => {
         {isMobileMenuOpen && (
           <div className="md:hidden mt-4 pb-4 border-t border-border">
             <nav className="flex flex-col space-y-4 mt-4">
-              <Link
-                to="/"
+              <button
+                onClick={() => {
+                  setIsMobileMenuOpen(false);
+                  handleHomeClick();
+                }}
                 className={`font-medium transition-colors hover:text-accent ${
                   isActive("/") ? "text-accent" : "text-foreground"
                 }`}
-                onClick={() => setIsMobileMenuOpen(false)}
               >
                 Home
-              </Link>
-              <a
-                href="#mentorship"
-                className="font-medium transition-colors hover:text-accent text-foreground"
-                onClick={(e) => {
-                  e.preventDefault();
+              </button>
+              <button
+                onClick={() => {
                   setIsMobileMenuOpen(false);
-                  document.getElementById('mentorship')?.scrollIntoView({ behavior: 'smooth' });
+                  handleNavigateToSection('mentorship');
                 }}
+                className="font-medium transition-colors hover:text-accent text-foreground"
               >
                 Mentorship
-              </a>
-              <a
-                href="#courses"
-                className="font-medium transition-colors hover:text-accent text-foreground"
-                onClick={(e) => {
-                  e.preventDefault();
+              </button>
+              <button
+                onClick={() => {
                   setIsMobileMenuOpen(false);
-                  document.getElementById('courses')?.scrollIntoView({ behavior: 'smooth' });
+                  handleNavigateToSection('courses');
                 }}
+                className="font-medium transition-colors hover:text-accent text-foreground"
               >
                 Courses
-              </a>
+              </button>
               <Link
                 to="/about"
                 className={`font-medium transition-colors hover:text-accent ${
