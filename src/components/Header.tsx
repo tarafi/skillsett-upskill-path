@@ -43,46 +43,42 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? "bg-background/95 backdrop-blur-md shadow-md"
-          : "bg-transparent"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-slate-900 shadow-md`}
     >
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex flex-col items-center space-y-2">
+          <Link to="/" className="flex flex-col items-start space-y-2">
             <img src="/lovable-uploads/8510923a-acbf-4769-bdc3-bed5590e69da.png" alt="skillsett.in" className="h-16 w-auto" />
-            <span className="text-sm text-muted-foreground font-medium">set your skills for tomorrow</span>
+            <span className="text-sm text-white font-medium">set your skills for tomorrow</span>
           </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             <button
               onClick={handleHomeClick}
-              className={`font-medium transition-colors hover:text-accent ${
-                isActive("/") ? "text-accent" : "text-foreground"
+              className={`font-medium transition-colors hover:text-green-400 ${
+                isActive("/") ? "text-green-400" : "text-white"
               }`}
             >
               Home
             </button>
             <button
               onClick={() => handleNavigateToSection('mentorship')}
-              className="font-medium transition-colors hover:text-accent text-foreground"
+              className="font-medium transition-colors hover:text-green-400 text-white"
             >
               Mentorship
             </button>
             <button
               onClick={() => handleNavigateToSection('courses')}
-              className="font-medium transition-colors hover:text-accent text-foreground"
+              className="font-medium transition-colors hover:text-green-400 text-white"
             >
               Courses
             </button>
             <Link
               to="/about"
-              className={`font-medium transition-colors hover:text-accent ${
-                isActive("/about") ? "text-accent" : "text-foreground"
+              className={`font-medium transition-colors hover:text-green-400 ${
+                isActive("/about") ? "text-green-400" : "text-white"
               }`}
             >
               About
@@ -96,7 +92,7 @@ const Header = () => {
 
           {/* Mobile Menu Toggle */}
           <button
-            className="md:hidden"
+            className="md:hidden text-white"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? (
@@ -116,8 +112,8 @@ const Header = () => {
                   setIsMobileMenuOpen(false);
                   handleHomeClick();
                 }}
-                className={`font-medium transition-colors hover:text-accent ${
-                  isActive("/") ? "text-accent" : "text-foreground"
+                className={`font-medium transition-colors hover:text-green-400 ${
+                  isActive("/") ? "text-green-400" : "text-white"
                 }`}
               >
                 Home
@@ -127,7 +123,7 @@ const Header = () => {
                   setIsMobileMenuOpen(false);
                   handleNavigateToSection('mentorship');
                 }}
-                className="font-medium transition-colors hover:text-accent text-foreground"
+                className="font-medium transition-colors hover:text-green-400 text-white"
               >
                 Mentorship
               </button>
@@ -136,14 +132,14 @@ const Header = () => {
                   setIsMobileMenuOpen(false);
                   handleNavigateToSection('courses');
                 }}
-                className="font-medium transition-colors hover:text-accent text-foreground"
+                className="font-medium transition-colors hover:text-green-400 text-white"
               >
                 Courses
               </button>
               <Link
                 to="/about"
-                className={`font-medium transition-colors hover:text-accent ${
-                  isActive("/about") ? "text-accent" : "text-foreground"
+                className={`font-medium transition-colors hover:text-green-400 ${
+                  isActive("/about") ? "text-green-400" : "text-white"
                 }`}
                 onClick={() => setIsMobileMenuOpen(false)}
               >
