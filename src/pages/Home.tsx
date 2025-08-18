@@ -37,6 +37,7 @@ const Home = () => {
       mode: "Online",
       day: "Saturday",
       externalLink: "https://pages.razorpay.com/skillsettsem1",
+      brochureLink: "https://drive.google.com/file/d/1LTx4m7uC_VFb43jf2z8qw0JOgPLXctk9/view?usp=sharing",
     },
     {
       id: "stata-data-analysis",
@@ -174,20 +175,31 @@ const Home = () => {
               <div className="bg-card border rounded-lg overflow-hidden shadow-lg flex flex-col h-full">
                 <div className="flex-1 overflow-hidden">
                   <img 
-                    src="/lovable-uploads/318e574e-6d7b-44fc-93dc-8cdcdddd188a.png" 
+                    src="/lovable-uploads/92f2fb55-03a1-424f-b3c9-5d196f331253.png" 
                     alt="Structural Equation Modelling Workshop"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="p-4 flex-shrink-0">
-                  <a 
-                    href="https://pages.razorpay.com/skillsettsem1"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-primary text-primary-foreground px-6 py-3 rounded-lg hover:bg-primary/90 transition-colors w-full block text-center font-semibold"
-                  >
-                    Apply Now
-                  </a>
+                  <div className="flex gap-2">
+                    <a 
+                      href="https://pages.razorpay.com/skillsettsem1"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-primary text-primary-foreground px-6 py-3 rounded-lg hover:bg-primary/90 transition-colors flex-1 text-center font-semibold"
+                    >
+                      Apply Now
+                    </a>
+                    <a 
+                      href="https://drive.google.com/file/d/1LTx4m7uC_VFb43jf2z8qw0JOgPLXctk9/view?usp=sharing"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-secondary text-secondary-foreground px-3 py-3 rounded-lg hover:bg-secondary/90 transition-colors"
+                      title="Download Brochure"
+                    >
+                      📄
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>

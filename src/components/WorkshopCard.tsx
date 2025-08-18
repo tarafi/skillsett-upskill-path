@@ -18,6 +18,7 @@ interface WorkshopCardProps {
   mode: string;
   day: string;
   externalLink?: string;
+  brochureLink?: string;
 }
 
 const WorkshopCard = ({
@@ -34,6 +35,7 @@ const WorkshopCard = ({
   mode,
   day,
   externalLink,
+  brochureLink,
 }: WorkshopCardProps) => {
   return (
     <Card className="group overflow-hidden border-0 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
@@ -110,9 +112,17 @@ const WorkshopCard = ({
             </Button>
           </Link>
         )}
-        <Button variant="outline" size="sm">
-          <Download className="w-4 h-4" />
-        </Button>
+        {brochureLink ? (
+          <a href={brochureLink} target="_blank" rel="noopener noreferrer">
+            <Button variant="outline" size="sm">
+              <Download className="w-4 h-4" />
+            </Button>
+          </a>
+        ) : (
+          <Button variant="outline" size="sm">
+            <Download className="w-4 h-4" />
+          </Button>
+        )}
       </CardFooter>
     </Card>
   );
