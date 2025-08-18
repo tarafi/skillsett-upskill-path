@@ -52,12 +52,9 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-3">
-            <img src={skillsettLogo} alt="skillsett.in" className="h-12 w-auto" />
-            <div className="flex flex-col">
-              <span className="text-2xl font-bold text-primary leading-none">skillsett.in</span>
-              <span className="text-xs text-muted-foreground font-medium">set your skills for tomorrow</span>
-            </div>
+          <Link to="/" className="flex flex-col items-center space-y-2">
+            <img src="/lovable-uploads/8510923a-acbf-4769-bdc3-bed5590e69da.png" alt="skillsett.in" className="h-16 w-auto" />
+            <span className="text-sm text-muted-foreground font-medium">set your skills for tomorrow</span>
           </Link>
 
           {/* Desktop Navigation */}
