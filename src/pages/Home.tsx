@@ -151,7 +151,7 @@ const Home = () => {
                 Learn, Apply, and Lead in the AI Age
               </h1>
               <p className="text-sm md:text-base text-muted-foreground mb-3 md:mb-4 leading-relaxed">
-                At SkillSett, we bring students, educators, and professionals together to master research, analytics, and technology through immersive, outcome-driven learning experiences.
+                At skillsett.in, we bring students, researchers, educators, and professionals together to master research, analytics, and technology through immersive, outcome-driven learning experiences.
               </p>
               <p className="text-sm md:text-base text-muted-foreground mb-3 md:mb-4 leading-relaxed">
                 We also offer dedicated mentorship programs for PhD aspirants and early-career scholars in management, economics, and commerce guiding you through research design, publishing, and academic career growth with personalized support from experienced mentors.
