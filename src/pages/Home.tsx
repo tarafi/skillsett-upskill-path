@@ -148,7 +148,7 @@ const Home = () => {
             {/* Hero Text - Left Side */}
             <div className="flex-1">
               <h1 className="text-2xl md:text-4xl font-bold text-green-600 mb-4 md:mb-6">
-                Learn, Apply, and Lead in the AI Age
+                Learn, Apply, and Lead...
               </h1>
               <p className="text-sm md:text-base text-muted-foreground mb-3 md:mb-4 leading-relaxed">
                 At skillsett.in, we bring students, researchers, educators, and professionals together to master research, analytics, and technology through immersive, outcome-driven learning experiences.
