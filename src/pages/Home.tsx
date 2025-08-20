@@ -1,4 +1,4 @@
-import { Users, MessageCircle } from "lucide-react";
+import { Users, MessageCircle, Download } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WorkshopCard from "@/components/WorkshopCard";
@@ -172,10 +172,14 @@ const Home = () => {
 
             {/* Featured Program Card - Right Side */}
             <div className="lg:w-96 flex">
-              <div className="bg-card border rounded-lg overflow-hidden shadow-lg flex flex-col h-full">
-                <div className="flex-1 overflow-hidden">
+              <div className="bg-card border rounded-lg overflow-hidden shadow-lg flex flex-col h-full relative">
+                {/* Featured Workshop Header */}
+                <div className="bg-green-600 text-white px-4 py-2 text-center font-semibold text-sm absolute top-0 left-0 right-0 z-10">
+                  Featured Workshop
+                </div>
+                <div className="flex-1 overflow-hidden pt-10">
                   <img 
-                    src="/lovable-uploads/92f2fb55-03a1-424f-b3c9-5d196f331253.png" 
+                    src="/lovable-uploads/d8a4a36e-6021-43b2-9e45-2b767a019438.png" 
                     alt="Structural Equation Modelling Workshop"
                     className="w-full h-full object-cover"
                   />
@@ -194,10 +198,10 @@ const Home = () => {
                       href="https://drive.google.com/file/d/1LTx4m7uC_VFb43jf2z8qw0JOgPLXctk9/view?usp=sharing"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="bg-secondary text-secondary-foreground px-3 py-3 rounded-lg hover:bg-secondary/90 transition-colors"
+                      className="bg-secondary text-secondary-foreground px-3 py-3 rounded-lg hover:bg-secondary/90 transition-colors flex items-center justify-center"
                       title="Download Brochure"
                     >
-                      📄
+                      <Download size={16} />
                     </a>
                   </div>
                 </div>
