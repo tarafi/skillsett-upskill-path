@@ -109,7 +109,7 @@ const Header = () => {
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
           <div className="md:hidden mt-4 pb-4 border-t border-border">
-            <nav className="flex flex-col space-y-4 mt-4">
+            <nav className="flex flex-col space-y-4 mt-4 items-center">
               <button
                 onClick={() => {
                   setIsMobileMenuOpen(false);
