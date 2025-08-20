@@ -37,7 +37,7 @@ const Home = () => {
       mode: "Online",
       day: "Saturday",
       externalLink: "https://pages.razorpay.com/skillsettsem1",
-      brochureLink: "https://drive.google.com/file/d/1LTx4m7uC_VFb43jf2z8qw0JOgPLXctk9/view?usp=sharing",
+      brochureLink: "https://drive.google.com/file/d/1-zbKiMEuHTEs4EwIhhFOG-Gtv_ByHHy-/view?usp=sharing",
     },
     {
       id: "stata-data-analysis",
@@ -195,7 +195,7 @@ const Home = () => {
                       Apply Now
                     </a>
                     <a 
-                      href="https://drive.google.com/file/d/1LTx4m7uC_VFb43jf2z8qw0JOgPLXctk9/view?usp=sharing"
+                      href="https://drive.google.com/file/d/1-zbKiMEuHTEs4EwIhhFOG-Gtv_ByHHy-/view?usp=sharing"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="bg-secondary text-secondary-foreground px-3 py-3 rounded-lg hover:bg-secondary/90 transition-colors flex items-center justify-center"
