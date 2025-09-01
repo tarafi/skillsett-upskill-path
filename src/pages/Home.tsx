@@ -38,6 +38,7 @@ const Home = () => {
       mode: "Online",
       day: "Saturday",
       externalLink: "https://pages.razorpay.com/factoranalysis",
+      brochureLink: "https://drive.google.com/file/d/1wsLclRKrYIOZWlhlz-tFFl0kqi2Yyq-u/view?usp=sharing",
     },
     {
       id: "master-ai-agents",
@@ -196,7 +197,7 @@ const Home = () => {
                       Apply Now
                     </a>
                     <a 
-                      href="https://pages.razorpay.com/factoranalysis"
+                      href="https://drive.google.com/file/d/1wsLclRKrYIOZWlhlz-tFFl0kqi2Yyq-u/view?usp=sharing"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="bg-secondary text-secondary-foreground px-3 py-3 rounded-lg hover:bg-secondary/90 transition-colors flex items-center justify-center"
