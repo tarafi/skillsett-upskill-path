@@ -20,24 +20,39 @@ import careerMentorship from "@/assets/career-mentorship.jpg";
 import researchMethods from "@/assets/research-methods.jpg";
 import aiCourse from "@/assets/ai-course.jpg";
 import dataViz from "@/assets/data-viz.jpg";
+import aiAgentsWorkshop from "@/assets/ai-agents-workshop.jpg";
 
 const Home = () => {
   const workshops = [
     {
-      id: "sem-basics-advanced",
-      title: "Structural Equation Modelling – Basics to Advanced",
-      instructor: "Dr. Rahseed K",
-      instructorTitle: "Asst. Professor, Aliah University, Kolkata",
-      instructorImage: "/lovable-uploads/8ea12e10-ce74-4f4b-b3fd-c6247ae38965.png",
-      posterImage: semWorkshop,
-      description: "Master the fundamentals and advanced concepts of SEM, including CFA and path analysis using AMOS and LISREL software.",
-      keywords: ["SEM", "CFA", "AMOS", "SPSS"],
-      date: "23rd Aug",
-      fee: "₹399",
+      id: "factor-analysis-spss",
+      title: "Factor Analysis using SPSS",
+      instructor: "Dr. Ahsan Sadiq",
+      instructorTitle: "Assistant Professor, Aligarh Muslim University (AMU)",
+      instructorImage: instructor3,
+      posterImage: spssWorkshop,
+      description: "Comprehensive guide to Exploratory and Confirmatory Factor Analysis using SPSS for data reduction and validation.",
+      keywords: ["SPSS", "EFA", "PCA", "Data Reduction"],
+      date: "6,7 September 2025",
+      fee: "₹159",
       mode: "Online",
       day: "Saturday",
-      externalLink: "https://pages.razorpay.com/skillsettsem1",
-      brochureLink: "https://drive.google.com/file/d/1-zbKiMEuHTEs4EwIhhFOG-Gtv_ByHHy-/view?usp=sharing",
+      externalLink: "https://pages.razorpay.com/factoranalysis",
+    },
+    {
+      id: "master-ai-agents",
+      title: "Master AI Agents",
+      instructor: "Dhilber",
+      instructorTitle: "Consultant AI Developer, Deloitte Bangalore",
+      instructorImage: instructor4,
+      posterImage: aiAgentsWorkshop,
+      description: "A focused program to design, build, and deploy production-grade AI agents—tool-using, goal-driven, and reliable—leveraging LLMs, vector search, and orchestration best practices.",
+      keywords: ["AI agents", "autonomous agents", "LLM orchestration", "LangChain", "multi-agent systems"],
+      date: "13 September 2025",
+      fee: "₹99",
+      mode: "Online",
+      day: "Friday",
+      externalLink: "https://pages.razorpay.com/aiagents",
     },
     {
       id: "stata-data-analysis",
@@ -48,20 +63,6 @@ const Home = () => {
       posterImage: stataWorkshop,
       description: "Learn comprehensive data analysis techniques using Stata for large datasets, including regression analysis and data cleaning.",
       keywords: ["Stata", "Regression", "Data Cleaning", "IHDS"],
-      date: "{Date yet to be announced}",
-      fee: "₹299",
-      mode: "Online",
-      day: "Saturday",
-    },
-    {
-      id: "factor-analysis-spss",
-      title: "Factor Analysis using SPSS",
-      instructor: "Dr. Ahsan Sadiq",
-      instructorTitle: "Asst. Professor, Aligarh Muslim University",
-      instructorImage: instructor3,
-      posterImage: spssWorkshop,
-      description: "Comprehensive guide to Exploratory and Confirmatory Factor Analysis using SPSS for data reduction and validation.",
-      keywords: ["SPSS", "EFA", "PCA", "Data Reduction"],
       date: "{Date yet to be announced}",
       fee: "₹299",
       mode: "Online",
@@ -179,15 +180,15 @@ const Home = () => {
                 </div>
                 <div className="flex-1 overflow-hidden pt-10">
                   <img 
-                    src="/lovable-uploads/d8a4a36e-6021-43b2-9e45-2b767a019438.png" 
-                    alt="Structural Equation Modelling Workshop"
+                    src="/lovable-uploads/06b75475-e24f-4946-9b7d-923852b303da.png" 
+                    alt="Factor Analysis using SPSS Workshop"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="p-4 flex-shrink-0">
                   <div className="flex gap-2">
                     <a 
-                      href="https://pages.razorpay.com/skillsettsem1"
+                      href="https://pages.razorpay.com/factoranalysis"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="bg-primary text-primary-foreground px-6 py-3 rounded-lg hover:bg-primary/90 transition-colors flex-1 text-center font-semibold"
@@ -195,7 +196,7 @@ const Home = () => {
                       Apply Now
                     </a>
                     <a 
-                      href="https://drive.google.com/file/d/1-zbKiMEuHTEs4EwIhhFOG-Gtv_ByHHy-/view?usp=sharing"
+                      href="https://pages.razorpay.com/factoranalysis"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="bg-secondary text-secondary-foreground px-3 py-3 rounded-lg hover:bg-secondary/90 transition-colors flex items-center justify-center"
