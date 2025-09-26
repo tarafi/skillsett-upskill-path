@@ -181,7 +181,7 @@ const Home = () => {
                 </div>
                 <div className="flex-1 overflow-hidden pt-10">
                   <img 
-                    src="/lovable-uploads/06b75475-e24f-4946-9b7d-923852b303da.png" 
+                    src="/lovable-uploads/factor-analysis-rasheed.jpg" 
                     alt="Factor Analysis using SPSS Workshop"
                     className="w-full h-full object-cover"
                   />
